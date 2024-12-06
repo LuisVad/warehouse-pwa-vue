@@ -1,4 +1,4 @@
-    serviceWorker.js
+//serviceWorker.js
    const CACHE_NAME = 'my-pwa-cache-v1';
    const urlsToCache = [
      '/',
@@ -7,6 +7,7 @@
      '/src/components/cliente/components/Home.vue',
      '/src/components/personal/components/SidebarNavbar.vue',
      '/src/components/cliente/components/Compras.vue',
+     '/service-worker.js',
    ];
 
 
