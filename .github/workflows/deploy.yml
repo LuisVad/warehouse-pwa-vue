@@ -16,13 +16,13 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 16  # Uses a version compatible with your project
+        node-version: 18  # Uses a version compatible with your project
 
     - name: Install Dependencies
       run: npm install
 
     - name: Run npm audit fix
-      run: npm audit fix  # This will fix any vulnerabilities automatically
+      run: npm audit fix --force
 
     - name: Build Project
       run: npm run build
